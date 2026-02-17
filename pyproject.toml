@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "air-sdk"
+version = "0.1.0"
+description = "Python SDK for AIR Blackbox Gateway — record, replay, and govern every AI decision"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
+authors = [{name = "Nostalgic Skin Co", email = "dev@nostalgicskinco.com"}]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+]
+
+dependencies = ["httpx>=0.25.0"]
+
+[project.optional-dependencies]
+openai = ["openai>=1.0.0"]
+langchain = ["langchain-openai>=0.1.0"]
+crewai = ["crewai>=0.1.0", "langchain-openai>=0.1.0"]
+all = ["openai>=1.0.0", "langchain-openai>=0.1.0", "crewai>=0.1.0"]
+dev = ["pytest>=7.0", "pytest-asyncio>=0.21"]
