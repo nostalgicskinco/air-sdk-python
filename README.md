@@ -11,15 +11,15 @@ AIR SDK connects your Python AI applications to the [AIR Blackbox Gateway](https
 ## Install
 
 ```bash
-pip install air-sdk
+pip install air-blackbox-sdk
 ```
 
 With framework extras:
 ```bash
-pip install air-sdk[openai]      # OpenAI integration
-pip install air-sdk[langchain]   # LangChain integration
-pip install air-sdk[crewai]      # CrewAI integration
-pip install air-sdk[all]         # Everything
+pip install air-blackbox-sdk[openai]      # OpenAI integration
+pip install air-blackbox-sdk[langchain]   # LangChain integration
+pip install air-blackbox-sdk[crewai]      # CrewAI integration
+pip install air-blackbox-sdk[all]         # Everything
 ```
 
 ## Quickstart

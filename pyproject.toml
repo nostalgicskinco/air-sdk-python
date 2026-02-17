@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "air-sdk"
+name = "air-blackbox-sdk"
 version = "0.1.0"
 description = "Python SDK for AIR Blackbox Gateway — record, replay, and govern every AI decision"
 readme = "README.md"
